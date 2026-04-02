@@ -8,6 +8,12 @@ wheels/
 
 # Virtual environments
 .venv
+__pycache__/
 
 # Personal notes
 notes/
+
+# models, runs, and data
+models/
+mlruns/
+data/
