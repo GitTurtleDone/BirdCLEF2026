@@ -18,7 +18,8 @@ uv init BirdCLEF2026
 cd BirdCLEF2026
 
 # Add necessary packages
-uv add torch torchvision torchaudio mlflow fastapi kaggle
+uv add torch torchvision torchaudio mlflow fastapi kaggle ipykernel # adding ipykernel to be able to run jupyter notebook
+
 
 # Initialise uv and sync dependencies
 uv sync
