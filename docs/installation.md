@@ -24,9 +24,17 @@ uv init BirdCLEF2026
 cd BirdCLEF2026
 
 # Add necessary packages
-uv add torch torchvision torchaudio mlflow fastapi kaggle
+uv add "torch==2.6.0+cu124" "torchaudio==2.6.0" "torchvision==0.21.0+cu124" --index https://download.pytorch.org/whl/cu124
+uv add mlflow fastapi kaggle
 uv add ipykernel # adding ipykernel to be able to run jupyter notebook
 uv add soundfile # to work with audio files
+
+# remove old cuda
+sudo apt remove nvidia-cuda-toolkit nvidia-cuda-dev libcudart11.0 nvidia-cuda-gdb nvidia-cudnn
+sudo apt autoremove
+# relink new cuda
+sudo ln -s /usr/local/cuda-12.5/bin/nvcc /usr/bin/nvcc
+
 
 
 # Initialise uv and sync dependencies
