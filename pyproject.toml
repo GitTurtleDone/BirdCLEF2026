@@ -7,9 +7,11 @@ requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.135.3",
     "ipykernel>=7.2.0",
+    "ipywidgets>=8.1.8",
     "kaggle>=2.0.0",
     "mlflow>=3.10.1",
     "soundfile>=0.13.1",
+    "tdqm>=0.0.1",
     "torch==2.6.0+cu124",
     "torchaudio==2.6.0",
     "torchvision==0.21.0+cu124",
