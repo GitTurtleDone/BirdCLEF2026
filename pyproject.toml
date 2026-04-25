@@ -12,6 +12,7 @@ dependencies = [
     "mlflow>=3.10.1",
     "soundfile>=0.13.1",
     "tdqm>=0.0.1",
+    "tensorflow-hub>=0.16.1",
     "torch==2.6.0+cu124",
     "torchaudio==2.6.0",
     "torchvision==0.21.0+cu124",
