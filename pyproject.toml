@@ -11,6 +11,7 @@ dependencies = [
     "kaggle>=2.0.0",
     "librosa>=0.11.0",
     "mlflow>=3.10.1",
+    "onnxruntime>=1.25.1",
     "soundfile>=0.13.1",
     "tdqm>=0.0.1",
     "tensorflow-hub>=0.16.1",
