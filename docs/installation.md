@@ -74,6 +74,8 @@ git remote add origin git@github.com:GitTurtleDone/BirdCLEF2026.git
     #run
     uv run kaggle competions list
     #and check that reponses contain .ogg and .txt files
+
+    
     ```
 
 ## 6. Downloading the data set
@@ -83,3 +85,10 @@ Use the Kaggle API to download the dataset:
 ```bash
 uv run kaggle competitions download -c birdclef-2026
 ```
+
+## 7. Uploading datasets to kaggle
+```
+uv tool install kaggle # 30/04/2026 update
+cd path/to/folder/cointaining/datasets/
+
+
