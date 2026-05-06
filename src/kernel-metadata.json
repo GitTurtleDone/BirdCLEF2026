@@ -1,0 +1,15 @@
+{
+  "id": "dangthaigiang/perch-v2-cpu-onnx-head-nb",
+  "title": "perch-v2-cpu-onnx-head-nb",
+  "code_file": "perch-v2-cpu-onnx-head-nb.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_tpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": ["dangthaigiang/perch-v2-cpu-onnx-head"],
+  "competition_sources": ["birdclef-2026"],
+  "kernel_sources": [],
+  "model_sources": []
+}
