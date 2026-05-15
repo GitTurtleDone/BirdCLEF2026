@@ -37,3 +37,5 @@ Download ouput from online training after Save & Run All:
 ```bash
 kaggle kernels output <your-account>/<slug-of-the-notebook> -p /path/to/dest
 ```
+
+
