@@ -11,6 +11,8 @@ dependencies = [
     "kaggle>=2.0.0",
     "librosa>=0.11.0",
     "mlflow>=3.10.1",
+    "nbformat>=5.10.4",
+    "nbimporter>=0.3.4",
     "onnxruntime>=1.25.1",
     "soundfile>=0.13.1",
     "tdqm>=0.0.1",
@@ -23,3 +25,12 @@ dependencies = [
 
 [[tool.uv.index]]
 url = "https://download.pytorch.org/whl/cu124"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
