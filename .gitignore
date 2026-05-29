@@ -18,3 +18,5 @@ models/
 mlruns/
 data/
 
+# zone identifier files
+*Zone.Identifier
