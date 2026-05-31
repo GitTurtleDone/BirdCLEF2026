@@ -11,6 +11,7 @@ dependencies = [
     "kaggle>=2.0.0",
     "librosa>=0.11.0",
     "mlflow>=3.10.1",
+    "nbconvert>=7.17.1",
     "nbformat>=5.10.4",
     "nbimporter>=0.3.4",
     "onnxruntime>=1.25.1",
