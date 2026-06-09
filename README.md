@@ -1,15 +1,23 @@
 This repository is used to participate in Kaggle competition
 [BirdCLEF 2026](https://www.kaggle.com/competitions/birdclef-2026).
 
-The guide to set up enviroment and download data can be seen [here](https://github.com/GitTurtleDone/BirdCLEF2026/blob/main/docs/installation.md)
+## The guide:
+to set up enviroment and download data can be seen [here](https://github.com/GitTurtleDone/BirdCLEF2026/blob/main/docs/installation.md)
 
-A good link to understand
+## A good link to understand
 
 - [Different quantities from a confusion matrix](https://www.geeksforgeeks.org/machine-learning/confusion-matrix-machine-learning/)
 - [ROC and AUC](https://www.youtube.com/watch?v=4jRBRDbJemM)
 - You can test your understanding of ROC and AUC [here](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc#:~:text=On%20this%20page,then%20graphing%20TPR%20over%20FPR.).
 - Micor- and macro-average ROC and AUC can be learned [here](https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html).
 
+## My score progression:
+0.5 <- random prediction, just to be able to submit properly-formatted notebooks.
+0.72 <- build a pipeline to load 15 GB train_audio data files,  transformed them into mel-spectrograms, which were used to train an [EfficientNet-B0 model](https://www.kaggle.com/code/dangthaigiang/efficientnet-b0).
+0.76 <- used pretrained perch-v2 to output embeddings, cached them to train [a simple linear head](https://www.kaggle.com/code/dangthaigiang/perch-v2-cpu-onnx-head-nb). 
+0.88 <- used the perch-v2 embeddings from the train_soundscapes audio files to train a customized [Mamba-inspired model](https://www.kaggle.com/code/dangthaigiang/perch-v2-combined-cnn-ssm-transformer-v7), which combines CNN, state-space, and attention blocks. The model-predicted outputs are then blended with original perch-v2 logits via trainable parameters. Picked up also new techniques: out-of-fold, threshold calibration, test-time augmentation along the way.
+
+## Set up
 Pull a notebook from Kaggle:
 
 ```bash
