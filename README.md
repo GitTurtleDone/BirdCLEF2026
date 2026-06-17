@@ -15,7 +15,7 @@ to set up enviroment and download data can be seen [here](https://github.com/Git
 0.5 <- random prediction, just to be able to submit properly-formatted notebooks.  
 0.72 <- build a pipeline to load 15 GB train_audio data files,  transformed them into mel-spectrograms, which were used to train an [EfficientNet-B0 model](https://www.kaggle.com/code/dangthaigiang/efficientnet-b0).  
 0.76 <- used pretrained perch-v2 to output embeddings, cached them to train [a simple linear head](https://www.kaggle.com/code/dangthaigiang/perch-v2-cpu-onnx-head-nb).   
-0.88 <- used the perch-v2 embeddings from the train_soundscapes audio files to train a customized [Mamba-inspired model](https://www.kaggle.com/code/dangthaigiang/perch-v2-combined-cnn-ssm-transformer-v7), which combines CNN, state-space, and attention blocks. The model-predicted outputs are then blended with original perch-v2 logits via trainable parameters. Picked up also new techniques: out-of-fold, threshold calibration, test-time augmentation along the way.
+0.88 <- used the perch-v2 embeddings and logits from the train_soundscapes audio files to train a customized [Mamba-inspired model](https://www.kaggle.com/code/dangthaigiang/perch-v2-combined-cnn-ssm-transformer-v7), which combines CNN, state-space, and attention blocks. The model-predicted outputs are then blended with original perch-v2 logits via trainable parameters. Picked up also new techniques: out-of-fold, threshold calibration, test-time augmentation along the way.
 
 ## Set up
 Pull a notebook from Kaggle:
